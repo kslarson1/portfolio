@@ -1,0 +1,134 @@
+.gray-1 {
+	color: $gray-1;
+}
+.gray-2 {
+	color: $gray-2;
+}
+.gray-3 {
+	color: $gray-3;
+}
+.gray-4 {
+	color: $gray-4;
+}
+.gray-5 {
+	color: $gray-5;
+}
+.gray-6 {
+	color: $gray-6;
+}
+
+.center {
+	text-align: center;
+}
+.ta-right {
+	text-align: right;
+}
+.inline {
+	display: inline;
+}
+
+#landing {
+	min-height: 800px;
+	padding: 2em 0;
+	h1 {
+		margin: .5em 0 1em 0;
+		font-size: 3em;
+	}
+	@media (min-width: 768px) {
+	h1 {
+		margin: .5em 0 .5em 4em;
+		font-size: 4em;
+		}
+	}
+}
+
+#intro {
+	padding: 6em 0 8em 0;
+	background-color: $gray-1;
+	h1 {
+		color: $logo-1;
+	}
+}
+
+#latest {
+	padding: 6em 0 8em 0;
+	background-color: $logo-3;
+	h1 {
+		color: $gray-5;
+		font-weight: 800;
+	}
+}
+
+.project_box {
+	margin: 1em auto;
+	width: 100%;
+	height: 400px;
+	background-color: $white
+}
+
+#testimonial {
+	padding: 6em 0 8em 0;
+	background-color: $white;
+	h1 {
+		color: $logo-5;
+	}
+}
+
+#contact {
+	padding: 6em 0 8em 0;
+	background-color: $logo-4;
+	h2 {
+		font-weight: 600;
+	}
+	h5 {
+		margin: .6em 0;
+		color: $black;
+		font-weight: 200;
+	}
+	.fa-arrow-right {
+		display: inline;
+		margin-left: 1em;
+	}
+	a {
+		color: $black;
+	}
+	a:hover {
+		color: $gray-1;
+		transition: all .5s ease-in;
+	}
+	.button_ghost {
+		border: 2px solid $black;
+		width: 50%;
+		margin: 0 auto;
+	}
+	.button_ghost:hover {
+		background-color: $black;
+		border: 2px solid $black;
+		transition: all .5s ease-in;
+	}
+}
+
+/*=contact form 7*/
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+	{
+		display: block;
+		padding: .5em;
+    	background-color: $white;
+		font-size: 1.3em;
+    	color: $gray-5;
+    	width: 100%;
+    	margin: 1em auto 0 auto;
+    	border: none;
+    	border-radius: 0;
+    	@media (min-width: 768px) {
+    		width: 50%;
+    	}
+    }
+.wpcf7 textarea {
+	height: 200px;
+}
+
+
