@@ -12,10 +12,16 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
+<div class="single_post">
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-9">
+
 			<?php get_template_part( 'content', 'single' ); ?>
 
 			<?php the_post_navigation(); ?>
 
+			
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template
 				if ( comments_open() || get_comments_number() ) :
@@ -23,10 +29,18 @@ get_header(); ?>
 				endif;
 			?>
 
+
 		<?php endwhile; // end of the loop. ?>
+		</div>
+
+		<div class="col-xs-12 col-sm-3">
+			<?php get_sidebar(); ?>
+		</div>
+	</div>  <!-- end of row -->
+</div>  <!-- end of container -->
+</div>  <!-- end of single_post -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

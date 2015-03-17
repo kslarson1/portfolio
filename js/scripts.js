@@ -14,3 +14,24 @@ $(function() {
     }
   });
 });
+
+
+
+// changes class after scrolling amount
+$(function() {
+ var sticky_navigation_offset_top = $('#landing').outerHeight();
+ var sticky_navigation = function(){
+   var scroll_top = $(window).scrollTop();
+   if (scroll_top > sticky_navigation_offset_top) {
+     $('.main-navigation').addClass('active');
+   } else {
+     $('.main-navigation').removeClass('active');
+   }
+ };
+
+ sticky_navigation();
+
+ $(window).scroll(function() {
+    sticky_navigation();
+ });
+});

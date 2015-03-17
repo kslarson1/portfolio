@@ -26,9 +26,25 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'portfolio' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'menu' ) ); ?>
+
+					</div>
+				</div>
+			</div>
+
 		</nav><!-- #site-navigation -->
+<!-- initialize slicknav -->
+<script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

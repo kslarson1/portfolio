@@ -1,5 +1,5 @@
 .widget {
-	margin: 0 0 1.5em;
+	margin: 2em 0 0 0;
 
 	/* Make sure select elements fit in widgets. */
 	select {
@@ -10,4 +10,18 @@
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
+}
+
+
+/*custom css*/
+.widget {
+	h1 {
+		font-size: 2em;
+	}
+	ul {
+		margin: 0;
+	}
+	ul li {
+		list-style: none;
+	}
 }

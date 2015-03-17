@@ -40,11 +40,11 @@ $color_button_2: #000;					/* Black */
 $color_button_3: #E1E1E1;				/* Light Gray */
 $color_button_4: #fff;					/* White */
 
-$color_header_1: rgba(250,250,250,.8);  /* transparent darkest */
+$color_header_1: rgba(255,255,255,1);  /* transparent darkest */
 $color_header_2: rgba(60,60,60,.9);  /* transparent slightly lighter (hover) */
 
 /* =link colors */
-$color__link: $color_text_3;
-$color__link-visited: $color_text_3;
-$color__link-hover: $logo-2;
+$color__link: $color_text_1;
+$color__link-visited: $color_text_1;
+$color__link-hover: $gray-5;
 $color__text-main: $color_text_1;

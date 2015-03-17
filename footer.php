@@ -25,6 +25,26 @@
 				<div class="col-xs-12 col-sm-4">
 					<div class="footer-highlight">
 						<h3>Stalk Me</h3>
+						<div class="social_container">
+							<span class="fa-stack fa-lg">
+								<a href="https://twitter.com" target="_blank">
+					  				<i class="fa fa-circle fa-stack-2x"></i>
+					  				<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+								</a>
+							</span>
+							<span class="fa-stack fa-lg">
+								<a href="https://instagram.com/karlslarson/" target="_blank">
+					  				<i class="fa fa-circle fa-stack-2x"></i>
+					  				<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+								</a>
+							</span>
+							<span class="fa-stack fa-lg">
+								<a href="https://www.facebook.com/karl.larson" target="_blank">
+		  							<i class="fa fa-circle fa-stack-2x"></i>
+		  							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+								</a>
+							</span>
+						</div>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4">

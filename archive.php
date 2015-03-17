@@ -14,15 +14,26 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-
 			<?php /* Start the Loop */ ?>
+
+<nav class="blog_nav">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+			<h1 class="inline">What's New</h1>
+				<?php wp_nav_menu( array( 'theme_location' => 'blog', 'menu_id' => 'blog menu' ) ); ?>
+			</div>
+		</div>
+	</div>
+</nav>
+
 			<?php while ( have_posts() ) : the_post(); ?>
+
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
 
 				<?php
 					/* Include the Post-Format-specific template for the content.
@@ -42,8 +53,11 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+		</div>
+	</div>
+</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

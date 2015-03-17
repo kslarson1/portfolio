@@ -1,8 +1,8 @@
 a {
-	color: $color__link;
+	color: $color_text_1;
 
 	&:visited {
-		color: $color__link-visited;
+		color: $color_text_1;
 	}
 	&:hover,
 	&:focus,
@@ -10,10 +10,10 @@ a {
 		color: $color__link-hover;
 	}
 	&:focus {
-		outline: thin dotted;
+		outline: none;
 	}
 	&:hover,
 	&:active {
-		outline: 0;
+		outline: none;
 	}
 }
