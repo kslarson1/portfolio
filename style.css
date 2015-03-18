@@ -1322,19 +1322,23 @@ hr {
   background-repeat: none;
   background-size: cover;
   background-position: center;
-  border: 0.8em solid #FFF;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
 .project_box_bottom {
-  width: 100%;
-  min-height: 100px;
-  padding: .5em;
-  background-color: rgba(30, 30, 30, 0.8);
+  height: 100%;
+  padding: 1em;
+  background-color: rgba(50, 50, 50, 0.3);
   text-align: center;
   text-overflow: ellipsis; }
   .project_box_bottom h4, .project_box_bottom h4:visited {
-    color: #FFF;
-    font-weight: 100; }
+    color: #dfdfdf;
+    font-weight: 200; }
+  .project_box_bottom:hover {
+    background-color: rgba(50, 50, 50, 0.5);
+    -webkit-transition: all 250ms ease-in;
+            transition: all 250ms ease-in; }
+    .project_box_bottom:hover h4 {
+      color: #FFF; }
 
 #testimonial {
   padding: 6em 0 8em 0;
@@ -1370,9 +1374,27 @@ hr {
     -webkit-transition: all .5s ease-in;
             transition: all .5s ease-in; }
 
+/*archive area*/
+#archive_posts p, #archive_posts body {
+  font-weight: 500; }
+
 /*blog area*/
+#blog p {
+  font-weight: 500; }
+
+.blog_image {
+  margin: 0 auto;
+  display: block; }
+
 .single_post {
-  margin: 2em 0 0 1em; }
+  margin: 2em 0 0 1em;
+  padding: 1em 0; }
+  .single_post p {
+    font-weight: 500;
+    font-size: 1.1em; }
+  @media (min-width: 768px) {
+    .single_post {
+      padding: 2em; } }
 
 .form-allowed-tags {
   display: none; }
@@ -1415,8 +1437,16 @@ hr {
   background-color: #FFF;
   padding: 1em;
   margin: 1em auto; }
+  .list_container p {
+    font-weight: 400;
+    color: #3b3b3b; }
   .list_container i {
     text-align: center; }
+
+.break {
+  padding: 6em 0;
+  background-color: #f06449;
+  color: #FFF; }
 
 .fa-plus-square-o {
   color: green;
@@ -1797,12 +1827,18 @@ a {
   padding: 2em .5em 1.5em .5em; }
   .footer-highlight p {
     margin: .4em 0; }
+  .footer-highlight a {
+    color: #636363; }
 
 .footer-highlight:hover {
   background-color: #000;
   color: #c6c6c6;
   -webkit-transition: all .5s ease-in;
           transition: all .5s ease-in; }
+  .footer-highlight:hover a {
+    color: #c6c6c6;
+    -webkit-transition: all .5s ease-in;
+            transition: all .5s ease-in; }
 
 /*social media*/
 .social_container {
@@ -1826,6 +1862,11 @@ a {
 
 .fa-instagram:hover {
   color: #517fa4;
+  -webkit-transition: all 250ms ease-in;
+          transition: all 250ms ease-in; }
+
+.fa-medium:hover {
+  color: #000;
   -webkit-transition: all 250ms ease-in;
           transition: all 250ms ease-in; }
 

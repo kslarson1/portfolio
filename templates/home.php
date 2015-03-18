@@ -48,7 +48,7 @@ get_header(); ?>
 			<div class="col-xs-12 col-md-8 col-md-offset-2 center">
 				<h1>Drip Forward</h1>
 				<h4><?php the_field('intro_text'); ?></h4>
-				<a href="#"><button class="button_ghost">about me</button></a>
+				<a href="blog"><button class="button_ghost">about me</button></a>
 			</div>
 		</div>
 	</div>

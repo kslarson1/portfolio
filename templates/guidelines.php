@@ -28,6 +28,7 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+
 <div class="the_list">
 	<div class="container">
 		<div class="row">
@@ -40,7 +41,7 @@ if( have_rows('client_positive') ): ;?>
 <!-- add hire me section -->
 	<div class="row">
 		<div class="col-xs-12 center">
-			<h3>Hire me if:</h3>
+			<h3><?php the_field('hire_me_header'); ?></h3>
 			<hr>
 		</div>
 	</div>
@@ -77,7 +78,7 @@ if( have_rows('client_negative') ): ; ?>
 <!-- add hire me section -->
 	<div class="row">
 		<div class="col-xs-12 center">
-			<h3>Don't hire me if:</h3>
+			<h3><?php the_field('fire_me_header'); ?></h3>
 			<hr>
 		</div>
 	</div>
@@ -104,6 +105,16 @@ endif;
 <!-- end of negative repeater -->
 			</div>  <!-- end of column -->
 		</div>  <!-- end of row -->
+	</div>
+</div>  <!-- end of =the_list -->
+
+<div class="break">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 center">
+				<h3><?php the_field('guidelines_end'); ?></h3>
+			</div>
+		</div>
 	</div>
 </div>
 

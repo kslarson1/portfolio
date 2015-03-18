@@ -15,7 +15,7 @@ get_header(); ?>
 <div class="single_post">
 <div class="container">
 	<div class="row">
-		<div class="col-xs-12 col-sm-9">
+		<div class="col-xs-12 col-sm-8">
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
@@ -33,7 +33,7 @@ get_header(); ?>
 		<?php endwhile; // end of the loop. ?>
 		</div>
 
-		<div class="col-xs-12 col-sm-3">
+		<div class="col-xs-12 col-sm-4">
 			<?php get_sidebar(); ?>
 		</div>
 	</div>  <!-- end of row -->

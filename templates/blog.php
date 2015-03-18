@@ -32,12 +32,12 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
 
 <!-- call blog posts -->
-<?php $the_query = new WP_Query( 'showposts=2' ); ?>
+<?php $the_query = new WP_Query( 'showposts=10' ); ?>
 <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 
 	<h1 class="center" style="margin: 0"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 	<p class="center"><?php the_date(); ?></p>
-	<a href="<?php the_permalink() ?>"><img src="<?php the_field('featured_image'); ?>"></a>
+	<a href="<?php the_permalink() ?>"><img src="<?php the_field('featured_image'); ?>" class="blog_image"></a>
 	<p><?php the_excerpt(__('(more…)')); ?></p>
 	<a href="<?php the_permalink() ?>"><button class="button_ghost">View Post</button></a>
 	<br>

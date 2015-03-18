@@ -204,11 +204,18 @@
 	p {
 		margin: .4em 0;
 	}
+	a {
+		color: $gray-5;
+	}
 }
 .footer-highlight:hover {
 	background-color: $black;
 	color: $gray-4;
 	transition: all .5s ease-in;
+	a {
+		color: $gray-4;
+		transition: all .5s ease-in;
+	}
 }
 
 /*social media*/
@@ -233,6 +240,10 @@
     }
 .fa-instagram:hover {
     color: #517fa4;
+    transition: all 250ms ease-in;
+}
+.fa-medium:hover {
+    color: $black;
     transition: all 250ms ease-in;
 }
 

@@ -71,20 +71,25 @@
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
-	border: .8em solid $white;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .project_box_bottom {
-	width: 100%;
-	min-height: 100px;
-	padding: .5em;
-	background-color: rgba(30,30,30,.8);
+	height: 100%;
+	padding: 1em;
+	background-color: rgba(50,50,50,.3);
 	text-align: center;
 	text-overflow: ellipsis;
 	h4, h4:visited {
-		color: $white;
-		font-weight: 100;
+		color: $gray-2;
+		font-weight: 200;
+	}
+	&:hover {
+		background-color: rgba(50,50,50,.5);
+		h4 {
+			color: $white;
+		}
+		transition: all 250ms ease-in;
 	}
 }
 
@@ -130,14 +135,35 @@
 	}
 }
 
+/*archive area*/
+#archive_posts {
+	p, body {
+		font-weight: 500;
+	}
+}
 
 /*blog area*/
 #blog {
+	p {
+		font-weight: 500;
+	}
+}
 
+.blog_image {
+	margin: 0 auto;
+	display: block;
 }
 
 .single_post {
 	margin: 2em 0 0 1em;
+	padding: 1em 0;
+	p {
+		font-weight: 500;
+		font-size: 1.1em;
+	}
+	@media (min-width: 768px) {
+		padding: 2em;
+	}
 }
 
 .form-allowed-tags {
@@ -186,10 +212,21 @@
 	background-color: $white;
 	padding: 1em;
 	margin: 1em auto;
+	p {
+		font-weight: 400;
+		color: $gray-6;
+	}
 	i {
 		text-align: center;
 	}
 }
+
+.break {
+	padding: 6em 0;
+	background-color: $logo-5;
+	color: $white;
+}
+
 
 .fa-plus-square-o {
 	color: green;

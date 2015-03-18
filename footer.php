@@ -44,12 +44,21 @@
 		  							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 								</a>
 							</span>
+							<span class="fa-stack fa-lg">
+								<a href="https://medium.com/@karllarson" target="_blank">
+		  							<i class="fa fa-circle fa-stack-2x"></i>
+		  							<i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+								</a>
+							</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4">
 					<div class="footer-highlight">
-						<h3>dunno</h3>
+						<h3>Neat Stuff</h3>
+						<a href="http://www.amazon.com/Meditations-Thrift-Editions-Marcus-Aurelius/dp/048629823X/ref=sr_1_1?s=books&ie=UTF8&qid=1426620382&sr=1-1&keywords=marcus+aurelius" target="_blank"><p>A good book</p></a>
+						<a href="http://brunchbillionaires.com" target="_blank"><p>Denver brunch reviews</p></a>
+						<a href="" target="_blank"><p></p></a>
 					</div>
 				</div>
 			</div>

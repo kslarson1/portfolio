@@ -29,8 +29,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-
-
+<div id="archive_posts">
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12">
@@ -55,6 +54,7 @@ get_header(); ?>
 
 		</div>
 	</div>
+</div>
 </div>
 
 		</main><!-- #main -->
