@@ -153,3 +153,37 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+// Make custom post category fit in with rest
+function add_custom_types_to_tax( $query ) {
+if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+
+// Get all your post types
+$post_types = get_post_types();
+
+$query->set( 'post_type', $post_types );
+return $query;
+}
+}
+add_filter( 'pre_get_posts', 'add_custom_types_to_tax' );
+
+
+
+
+// register custom post type for featured works
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+  register_post_type( 'featured_work',
+    array(
+      'labels' => array(
+        'name' => __( 'Featured Works' ),
+        'singular_name' => __( 'Featured Work' )
+      ),
+      'taxonomies' => array( 'category' ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'work'),
+    )
+  );
+}

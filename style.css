@@ -1288,6 +1288,23 @@ hr {
 .inline {
   display: inline; }
 
+.hr_small {
+  max-width: 200px;
+  height: 2px;
+  background-color: #3b3b3b;
+  border: none;
+  margin: 0 auto 2.25em auto; }
+
+.full_bg {
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (min-width: 768px) {
+    .full_bg {
+      height: 700px; } }
+
 #landing {
   min-height: 800px;
   padding: 2em 0; }
@@ -1321,8 +1338,7 @@ hr {
   background-color: #FFF;
   background-repeat: none;
   background-size: cover;
-  background-position: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  background-position: center; }
 
 .project_box_bottom {
   height: 100%;
@@ -1334,7 +1350,7 @@ hr {
     color: #dfdfdf;
     font-weight: 200; }
   .project_box_bottom:hover {
-    background-color: rgba(50, 50, 50, 0.5);
+    background-color: rgba(50, 50, 50, 0.4);
     -webkit-transition: all 250ms ease-in;
             transition: all 250ms ease-in; }
     .project_box_bottom:hover h4 {
@@ -1448,6 +1464,11 @@ hr {
   background-color: #f06449;
   color: #FFF; }
 
+.break_top {
+  padding: 4em 0 6em 0;
+  background-color: #dfdfdf;
+  color: #000; }
+
 .fa-plus-square-o {
   color: green;
   display: block;
@@ -1457,6 +1478,52 @@ hr {
   color: red;
   display: block;
   margin: 0 auto; }
+
+/*=custompost*/
+.work_left {
+  display: block;
+  float: left;
+  background-color: #FFF;
+  width: 100%;
+  height: 450px;
+  padding: 4em 2em; }
+  .work_left p {
+    font-size: 1.2em; }
+  @media (min-width: 768px) {
+    .work_left {
+      width: 50%;
+      padding: 4em 2em; } }
+  .work_left .button_ghost {
+    border: 2px solid #000; }
+  .work_left .button_ghost:hover {
+    background-color: #000;
+    color: #FFF;
+    -webkit-transition: all 250ms ease-in;
+            transition: all 250ms ease-in; }
+
+.work_right {
+  display: block;
+  float: left;
+  background-color: #FFF;
+  width: 100%;
+  height: 450px;
+  background-repeat: none;
+  background-position: center;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    .work_right {
+      width: 50%; } }
+
+.work_testimonial {
+  display: block;
+  padding: 6em 0 5em 0;
+  background-color: #f06449;
+  color: #FFF; }
+
+.work_screen {
+  width: 100%;
+  background-color: #FFF;
+  padding: 4em 0; }
 
 /*TYPOGRAPHY*/
 /* Google Fonts */

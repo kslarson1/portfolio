@@ -70,7 +70,7 @@ get_header(); ?>
       'cat' => 2,
       'post_type' => 'post',
       'post_status' => 'publish',
-      'posts_per_page' => 4,
+      'posts_per_page' => 2,
       'caller_get_posts'=> 1
       );
     $my_query = null;
@@ -78,6 +78,8 @@ get_header(); ?>
     if( $my_query->have_posts() ) {
       while ($my_query->have_posts()) : $my_query->the_post(); ?>
       
+
+
 <div class="col-xs-12 col-sm-6">
 	<a href="<?php the_permalink() ?>" rel="bookmark">
 		<div class="project_box" style="background-image: url(<?php the_field('featured_image'); ?>)">
@@ -134,7 +136,6 @@ get_header(); ?>
 		<?php echo do_shortcode('[contact-form-7 id="9" title="Contact Form Home"]'); ?>
 	</div>
 </div>
-
 
 			<?php endwhile; // end of the loop. ?>
 
