@@ -43,6 +43,7 @@ get_header(); ?>
 	<br>
 	<?php echo do_shortcode('[cresta-social-share]'); ?>
 	<hr>
+	<hr>
 
 <?php endwhile;?>
 

@@ -48,14 +48,14 @@ get_header(); ?>
 			<div class="col-xs-12 col-md-8 col-md-offset-2 center">
 				<h1>Drip Forward</h1>
 				<h4><?php the_field('intro_text'); ?></h4>
-				<a href="blog"><button class="button_ghost">about me</button></a>
+				<a href="#contact"><button class="button_ghost">contact</button></a>
 			</div>
 		</div>
 	</div>
 </div>
 
 <div id="latest">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 center">
 				<h1><?php the_field('latest_header'); ?></h1>
@@ -65,10 +65,9 @@ get_header(); ?>
 		
 <!-- start calling latest projects -->
 <?php
-//display 4 posts for category id 2 (projects)
+//display 2 posts for featured work custom post
     $args=array(
-      'cat' => 2,
-      'post_type' => 'post',
+      'post_type' => 'featured_work',
       'post_status' => 'publish',
       'posts_per_page' => 2,
       'caller_get_posts'=> 1
@@ -81,13 +80,19 @@ get_header(); ?>
 
 
 <div class="col-xs-12 col-sm-6">
-	<a href="<?php the_permalink() ?>" rel="bookmark">
 		<div class="project_box" style="background-image: url(<?php the_field('featured_image'); ?>)">
-			<div class="project_box_bottom">
-				<h4><?php the_field('featured_text'); ?></h4>
-			</div>
 		</div>
-	</a>
+		<a href="<?php the_permalink() ?>" rel="bookmark">
+			<div class="tile_container">
+			<div class="project_box_tile">
+				<h5 class="center"><?php the_field('project_teaser'); ?></h5>
+			</div>
+			<div class="project_button">
+				<h4 class="inline">View</h4>
+			</div>
+			</div>
+		</a>
+
 </div>
 
 	<?php endwhile; }
@@ -125,7 +130,7 @@ get_header(); ?>
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-sm-offset-3 center">
-				<h5 class="inline">Do you have a project you want to discuss? Submit below or check out my guidelines first.</h5><a href="guidelines"><i class="fa fa-arrow-right"></i></a>
+				<h5 class="inline"><?php the_field('contact_text'); ?>Do you have a project you want to discuss? Message me below or check out my guidelines first.</h5><a href="guidelines"><i class="fa fa-arrow-right"></i></a>
 			</div>
 		</div>
 		<div class="row">

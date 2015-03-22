@@ -30,31 +30,31 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 <div id="archive_posts">
-<div class="container">
-	<div class="row">
-		<div class="col-xs-12">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+					<?php
+						/* Include the Post-Format-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'content', get_post_format() );
+					?>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+				<?php the_posts_navigation(); ?>
 
-		<?php else : ?>
+			<?php else : ?>
 
-			<?php get_template_part( 'content', 'none' ); ?>
+				<?php get_template_part( 'content', 'none' ); ?>
 
-		<?php endif; ?>
+			<?php endif; ?>
 
+			</div>
 		</div>
 	</div>
-</div>
 </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

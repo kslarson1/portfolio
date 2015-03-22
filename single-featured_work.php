@@ -27,9 +27,9 @@ get_header(); ?>
 
 <div class="container-fluid" style="padding: 0">
 	<div class="work_left">
-		<p><b>Project:</b></p>
+		<p><b>Project: </b><?php the_field('work_scope'); ?></p>
 		<p class="gray-5"><?php the_field('work_desc'); ?></p>
-		<a href="http://www.thewrigley.com" target="_blank"><button class="button_ghost">View Site</button></a>
+		<a href="<?php the_field('page_link'); ?>" target="_blank"><button class="button_ghost">View Site</button></a>
 	</div>
 	<div class="work_right" style="background-image: url(<?php the_field('bg_image'); ?>)">
 	</div>
@@ -48,8 +48,8 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 ta-right gray-6">
-			<p><b><?php the_field('testimonial_author'); ?></b></p>
+			<div class="col-xs-12 center gray-5">
+				<h4><?php the_field('testimonial_author'); ?></h4>
 			</div>
 		</div>
 	</div>
