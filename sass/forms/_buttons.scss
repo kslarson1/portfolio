@@ -21,7 +21,7 @@
 	text-decoration: none;
 	background-color: $logo-1;
 	color: $color_button_4;
-	transition: all .3s;  
+	transition: all 300ms ease-out;  
 }
 
 .button_ghost_wide {
@@ -45,11 +45,7 @@
 	text-decoration: none;
 	background-color: $logo-2;
 	color: $color_button_4;
-	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	-ms-transition: all .3s;
-	-o-transition: all .3s;
-		transition: all .3s;  
+		transition: all 300ms ease-out;  
 }
 
 .button_flat {
@@ -74,11 +70,7 @@
 	background-color: $logo-1;
 	border: 2px solid $logo-1;
 	color: $color_button_4;
-	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	-ms-transition: all .3s;
-	-o-transition: all .3s;
-	transition: all .3s;  
+	transition: all 300ms ease-out;  
 }
 
 .button_raised {
@@ -105,5 +97,5 @@
 	border: 2px solid $logo-4;
 	color: $color_button_4;
 	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
-	transition: all .3s;  
+	transition: all 300ms ease-out;  
 }

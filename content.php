@@ -37,7 +37,11 @@
 				'after'  => '</div>',
 			) );
 		?>
+
 	</div><!-- .entry-content -->
+	<h4 class="gray-6 center"><?php the_field('company_details'); ?></h4>
+	<a href="<?php the_permalink() ?>"><button class="button_ghost">View Post</button></a>
+		<hr>
 		<hr>
 		</div>
 	</div>

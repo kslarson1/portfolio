@@ -29,7 +29,10 @@ textarea {
 
 /*FONT SIZES*/
 h1 {
-	font-size: 4em;
+	font-size: 3em;
+	@media (min-width: 768px) {
+		font-size: 4em;
+	}
 }
 h2 {
 	font-size: 3em;

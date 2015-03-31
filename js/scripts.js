@@ -15,8 +15,6 @@ $(function() {
   });
 });
 
-
-
 // changes class after scrolling amount
 $(function() {
  var sticky_navigation_offset_top = $('#landing').outerHeight();
@@ -34,4 +32,19 @@ $(function() {
  $(window).scroll(function() {
     sticky_navigation();
  });
+ });
+
+// -- Set Dynamic Heights and CSS -- //
+$(document).ready(function(){
+  resizeDiv();
 });
+window.onresize = function(event) {
+  resizeDiv();
+};
+function resizeDiv() {
+  vpw = $(window).width(); // Viewport Width
+  vph = $(window).height(); // Viewport Height
+
+  // Home page background image height
+$('#landing').css({'height': vph + 'px'});
+};

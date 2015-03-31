@@ -29,33 +29,36 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-<div id="archive_posts">
+<div class="archive_posts">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
+				<h1 class="center"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+				<p class="center gray-5"><?php the_field('featured_text'); ?></p>
+			
 
-					<?php
-						/* Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'content', get_post_format() );
-					?>
+			<a href="<?php the_permalink() ?>"><button class="button_ghost">View Post</button></a>
 
+			</div>
+		</div>
+	</div>
+</div>
 				<?php endwhile; ?>
 
 				<?php the_posts_navigation(); ?>
 
+			
 			<?php else : ?>
 
 				<?php get_template_part( 'content', 'none' ); ?>
 
 			<?php endif; ?>
 
-			</div>
-		</div>
-	</div>
-</div>
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

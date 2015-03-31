@@ -33,7 +33,6 @@ get_header(); ?>
 			</div>
 		</div>
 		<br>
-		<br>
 		<div class="row">
 			<div class="col-xs-12 center">
 				<a href="#intro"><i class="fa fa-angle-down fa-3x"></i></a>
@@ -58,8 +57,17 @@ get_header(); ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 center">
-				<h1><?php the_field('latest_header'); ?></h1>
-				<br>
+				<p class="ttup" style="margin: .2em auto">featured work</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 center">
+				<h1 style="margin: .2em auto"><?php the_field('latest_header'); ?></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 center" style="margin-bottom: 6em">
+				<p><?php the_field('latest_subheader'); ?></p>
 			</div>
 		</div>
 		
@@ -82,8 +90,8 @@ get_header(); ?>
 <div class="col-xs-12 col-sm-6">
 		<div class="project_box" style="background-image: url(<?php the_field('featured_image'); ?>)">
 		</div>
-		<a href="<?php the_permalink() ?>" rel="bookmark">
 			<div class="tile_container">
+			<a href="<?php the_permalink() ?>" rel="bookmark">
 			<div class="project_box_tile">
 				<h5 class="center"><?php the_field('project_teaser'); ?></h5>
 			</div>

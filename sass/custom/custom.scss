@@ -23,7 +23,9 @@
 .ta-right {
 	text-align: right;
 }
-
+.ttup {
+	text-transform: uppercase;
+}
 .inline {
 	display: inline;
 }
@@ -49,8 +51,9 @@
 }
 
 #landing {
-	min-height: 800px;
 	padding: 2em 0;
+	background-color: $white;
+	color: $black;
 	h1 {
 		margin: .5em 0 1em 0;
 		font-size: 3em;
@@ -65,18 +68,28 @@
 
 #intro {
 	padding: 6em 0 8em 0;
-	background-color: $logo-3;
+	background-color: $logo-1;
 	h1 {
+		color: $white;
+	}
+	.button_ghost {
+		color: $white;
+		border: 2px solid $white;
+	}
+	.button_ghost:hover,
+	.button_ghost:active {
+		background-color: $white;
 		color: $logo-1;
+		transition: all 300ms ease-out;
 	}
 }
 
 #latest {
-	padding: 3em 0 6em 0;
+	padding: 5em 0 6em 0;
 	background-color: $white;
 	h1 {
 		color: $logo-2;
-		font-weight: 200;
+		font-weight: 300;
 		letter-spacing: 4px;
 	}
 	h3 {
@@ -89,6 +102,10 @@
 		background-color: $logo-2;
 		color: $white;
 		transition: all 250ms ease-out;
+	}
+	p {
+		font-weight: 400;
+		color: $gray-5;
 	}
 }
 
@@ -177,7 +194,7 @@ a:hover {
 	h5 {
 		margin: .6em 0;
 		color: $black;
-		font-weight: 200;
+		font-weight: 300;
 	}
 	.fa-arrow-right {
 		display: inline;
@@ -203,9 +220,14 @@ a:hover {
 }
 
 /*archive area*/
-#archive_posts {
+.archive_posts {
+	border-bottom: 2px solid $black;
+	padding: 3em 0;
 	p, body {
-		font-weight: 500;
+		font-weight: 300;
+	}
+	h1 a {
+		font-weight: 300;
 	}
 }
 
@@ -224,7 +246,7 @@ a:hover {
 .single_post {
 	margin: 2em 0 0 1em;
 	padding: 1em 0;
-	p {
+	p, {
 		font-weight: 500;
 		font-size: 1.1em;
 	}
@@ -318,7 +340,7 @@ a:hover {
 	float: left;
 	background-color: $white;
 	width: 100%;
-	height: 450px;
+	min-height: 450px;
 	padding: 4em 2em;
 	p {
 		font-size: 1.2em;
@@ -326,6 +348,7 @@ a:hover {
 	@media (min-width: 768px) {
 		width: 50%;
 		padding: 4em 2em;
+		height: 450px;
 	}
 	.button_ghost {
 		border: 2px solid $black;
